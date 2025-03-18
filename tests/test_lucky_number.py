@@ -1,7 +1,7 @@
 """test file"""
 
 import random
-import lucky_number
+import pykeafortune.lucky_number as lucky_number
 
 
 

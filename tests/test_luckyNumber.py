@@ -1,1 +1,0 @@
-# Lucky number test file
