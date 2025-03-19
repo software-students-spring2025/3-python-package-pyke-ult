@@ -33,7 +33,7 @@ def get_horoscope(birthday: str, birth_time: str, location: str) -> str:
         # First check if the birth_time matches the exact format we want
         if not birth_time or len(birth_time.split(':')) != 2:
             raise ValueError("Birth time must be in 'HH:MM' format (24-hour clock).")
-        
+
         # Then try to parse it to validate the values
         datetime.datetime.strptime(birth_time, '%H:%M')
     except ValueError:
