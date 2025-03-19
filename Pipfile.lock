@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "83891b379bf74090339841acf0874dbbba893e0f088c23418b7bf0819a8e8254"
+            "sha256": "b1ba4d01aa26f3d00c71512aa8ce7d42c726a2d8ba0b443f0075f4996a8464d3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -272,6 +272,10 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==2.19.1"
+        },
+        "pykeafortune": {
+            "editable": true,
+            "file": "."
         },
         "pyproject-hooks": {
             "hashes": [
