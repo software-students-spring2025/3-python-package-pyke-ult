@@ -1,5 +1,7 @@
 """
-Module Docstring
+__main__.py
+
+This module serves as an example of a program that uses all functions in the pykeafortune package
 """
 
 from pykeafortune.fortune_cookie import get_fortune
@@ -8,9 +10,8 @@ from pykeafortune.lucky_day import get_lucky_day
 from pykeafortune.lucky_number import get_lucky_number
 
 def main():
-    """
-    Function docstring
-    """
+    """Calls every function in the pykeafortune package and prints all function returns."""
+    
     print("Welcome to Pykeafortune - Your Personal Fortune Teller!")
     print("-" * 55)
 
