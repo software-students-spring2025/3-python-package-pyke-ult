@@ -107,10 +107,37 @@ Raises:
     user_input = input("Enter your favorite color: ")
     print(get_lucky_number(user_input))
 
+## Example Python Program
 
-
+See pykeafortune in action [here](https://github.com/software-students-spring2025/3-python-package-pyke-ult/blob/main/src/pykeafortune/__main__.py)!
 
 ## How to Contribute to pykeafortune
+
+1. Clone the repository.
+
+        git clone https://github.com/software-students-spring2025/3-python-package-pyke-ult.git
+
+2. Set up the virtual environment and install the necessary dependencies.
+
+        pip install pipenv
+        pipenv install
+        pipenv shell
+
+3. Create a branch, implement your feature, push your branch to origin, then submit a PR!
+
+### Building and Testing
+
+To build pykeafortune in your clone, run
+
+```sh
+python -m build
+```
+
+To test pykeafortune in your clone, run
+
+```sh
+pytest
+```
 
 ## How to Configure and Run Your Project
 
