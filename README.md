@@ -6,6 +6,20 @@
 
 [pykeafortune](https://pypi.org/project/pykeafortune/) is a Python package containing functions to find your horoscope, lucky day, lucky number, and fortune cookie fortune when you want to boost your luck and discover any upcoming fortune.
 
+## Installation: How to Import and Use pykeafortune
+
+1. Install the package
+
+        pip install pykeafortune
+
+2. Import desired functions into your Python code
+
+        from pykeafortune.fortune_cookie import get_fortune
+        from pykeafortune.horoscope import get_horoscope
+        from pykeafortune.lucky_day import get_lucky_day
+        from pykeafortune.lucky_number import get_lucky_number
+
+
 ## Documentation
 
 ### get_fortune(number: int) -> str
@@ -93,7 +107,6 @@ Raises:
     user_input = input("Enter your favorite color: ")
     print(get_lucky_number(user_input))
 
-## How to Import and Use pykeafortune
 
 
 
