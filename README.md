@@ -133,13 +133,26 @@ To build pykeafortune in your clone, run
 python -m build
 ```
 
-To test pykeafortune in your clone, run
+To test pykeafortune (i.e. run unit tests) in your clone, run
 
 ```sh
 pytest
 ```
 
-## How to Configure and Run Your Project
+## How to Run Your Project
+
+To run your project as a Python script implemented in `__main__.py` in `src`, assuming you are in the proper virtual environment, simply run
+
+```sh
+python -m pykeafortune
+```
+
+Note: in your `__main__.py` file, below your implementation of `main()`, you will want to include
+
+```sh
+if __name__ == "__main__":
+    main()
+```
 
 ## Contributors:
 [Matthew Cheng](https://github.com/mattchng)
