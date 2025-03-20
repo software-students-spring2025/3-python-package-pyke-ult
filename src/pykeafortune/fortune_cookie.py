@@ -56,10 +56,10 @@ def get_fortune(number: int) -> str:
     if not (1 <= number <= 50):
         return "Invalid number. Please enter a number between 1 and 50."
     
-    if number in {1, 2, 6, 7, 8, 9, 11, 12, 16, 17, 18, 19, 22, 26, 28, 29, 32, 37, 39, 42, 47}:  # big Fortune
+    if number in {1, 2, 6, 7, 8, 9, 11, 12, 16, 17, 18, 19, 22, 26, 28, 29, 32, 37, 39, 42, 47}:  # big fortune
         return f"Big Fortune: {random.choice(big_fortune_messages)}"
     
-    elif number in {3, 5, 14, 20, 24, 34, 35, 43, 44, 49, 50}:  # mid Fortune
+    elif number in {3, 5, 14, 20, 24, 34, 35, 43, 44, 49, 50}:  # mid fortune
         return f"Mid Fortune: {random.choice(mid_fortune_messages)}"
     
     else:  # small Fortune

@@ -3,7 +3,6 @@
 from pykeafortune.horoscope import get_horoscope
 from pykeafortune.lucky_number import generate_lucky_number, ask_color
 from pykeafortune.fortune_cookie import get_fortune
-import time
 
 def main():
     print("Welcome to Pykeafortune - Your Personal Fortune Teller!")
@@ -29,8 +28,6 @@ def main():
     except ValueError as e:
         print(f"Error: {e}")
         print("Please make sure to enter the correct format for birthday and time.")
-
-    time.sleep(2.5)
 
     print("\nNow time for your fortune!")
     while True:
