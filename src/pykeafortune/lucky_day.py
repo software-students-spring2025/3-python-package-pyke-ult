@@ -19,7 +19,11 @@ def get_lucky_day(favorite_day: str) -> datetime.datetime:
 
     Raises:
         ValueError: If the user's favorite day is not a valid day of the week.
+        TypeError: If the user input is not a string.
     """
+
+    if not isinstance(favorite_day, str):
+        raise TypeError("Argument must be a string, but received a non-string value.")
 
     favorite_day = favorite_day.lower()
     days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]

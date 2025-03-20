@@ -67,12 +67,25 @@ def test_invalid_day():
     an invalid day.
     """
 
-    invalid = ["mon", "Th", 1, "", "mondaymonday", "FR1day"]
+    invalid = ["mon", "Th", "123", "", "mondaymonday", "FR1day"]
 
     for day in invalid:
         with pytest.raises(ValueError, match="Invalid day entered. "
             "Please enter a valid day of the week without any abbreviations."):
             lucky_day.get_lucky_day(day)
+
+def test_invalid_input_type():
+    """
+    Verify that get_lucky_day raises a TypeError upon receiving
+    an invalid input type.
+    """
+
+    invalid = [1, 1.4, -134, 5]
+
+    for test_input in invalid:
+        with pytest.raises(TypeError, match="Argument must be a string, "
+            "but received a non-string value."):
+            lucky_day.get_lucky_day(test_input)
 
 def test_favorite_day_today():
     """
