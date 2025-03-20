@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pykeafortune"
-version = "0.1.0"
+version = "0.1.2"
 description = "A Python package for generating horoscopes, fortunes, and lucky numbers."
 authors = [
     { name = "James Hou", email = "jjh9584@nyu.edu" },
