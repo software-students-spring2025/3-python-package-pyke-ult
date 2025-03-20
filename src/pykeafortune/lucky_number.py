@@ -80,5 +80,5 @@ def get_lucky_number(favorite_color: str) -> int:
     if favorite_color not in colors:
         raise ValueError("Invalid color entered. Please enter a valid, "
                         "more common color.")
-    
+
     return colors[favorite_color]

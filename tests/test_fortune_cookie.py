@@ -108,8 +108,4 @@ def test_invalid_input_type():
     for test_input in invalid:
         with pytest.raises(TypeError, match="Argument must be an int, "
             "but received a non-int value."):
-<<<<<<< HEAD
             fortune_cookie.get_fortune(test_input)
-=======
-            fortune_cookie.get_fortune(test_input)
->>>>>>> 0c30d9e08d61faff267ea1a04dab59f72471af83
